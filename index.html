@@ -1,0 +1,403 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="main">
+      <nav>
+        <span class="logo"
+          ><img width="54" src="Assets/images/logo.svg" alt="NETFLIX LOGO"
+        /></span>
+        <div class="nav_buttons">
+          <button class="btn_english">English</button>
+          <button class="btn_red_sn">Sign In</button>
+        </div>
+      </nav>
+      <div class="box_background_obacity"></div>
+      <div class="text1">
+        <span>Unlimited movies, TV shows and more</span>
+        <span>Starts at ₹149. Cancel at any time.</span>
+        <span
+          >Ready to watch? Enter your email to create or restart your
+          membership.</span
+        >
+        <div>
+          <input type="text" class="email" placeholder="Email address" />
+          <button class="btn_get_started">Get Started ></button>
+        </div>
+      </div>
+    </div>
+    <div class="netflix-curve-outer">
+      <div class="netflix-curve-inner">
+        <div class="netflix-curve-bg">
+          <div class="netflix-curve-gradient"></div>
+        </div>
+      </div>
+    </div>
+    <div class="tendbox">
+    <div class="trendingnow"><h2>Tending Now</h2></div>
+<div class="slide">
+  <div class="slide-images">
+    <img src="Assets/images/image1-c.webp" alt="1">
+    <img src="Assets/images/image2-c.webp" alt="2">
+    <img src="Assets/images/image3-c.webp" alt="3">
+    <img src="Assets/images/image4-c.webp" alt="4">
+    <img src="Assets/images/image5-c.webp" alt="5">
+    <img src="Assets/images/image6-c.webp" alt="6">
+    <img src="Assets/images/image7-c.webp" alt="7">
+    <img src="Assets/images/image8-c.webp" alt="8">
+    <img src="Assets/images/image9-c.webp" alt="9">
+    <img src="Assets/images/image10-c.webp" alt="10">
+  </div>
+  <button class="next-btn">&#8250;</button>
+</div>
+</div>
+  
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="box_background_obacity"></div>
+      <nav>
+        <span class="logo">
+          <img width="54" src="Assets/images/logo.svg" alt="NETFLIX LOGO" />
+        </span>
+        <div class="nav_buttons">
+          <div class="dropdown">
+            <button class="btn_english" id="languageBtn">
+              <svg
+                class="w-6 h-6 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m13 19 3.5-9 3.5 9m-6.125-2h5.25M3 7h7m0 0h2m-2 0c0 1.63-.793 3.926-2.239 5.655M7.5 6.818V5m.261 7.655C6.79 13.82 5.521 14.725 4 15m3.761-2.345L5 10m2.761 2.655L10.2 15"
+                />
+              </svg>
+              English
+              <svg
+                class="dropdown-icon"
+                fill="#fff"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+              >
+                <path d="M7 10L12 15L17 10H7Z" />
+              </svg>
+            </button>
+            <div class="dropdown-content">
+              <button onclick="changeLanguage('English')">English</button>
+              <button onclick="changeLanguage('हिन्दी')">हिन्दी</button>
+            </div>
+          </div>
+          <button class="btn_red_sn">Sign In</button>
+        </div>
+      </nav>
+      <div class="text1">
+        <h1>Unlimited movies, TV shows and more</h1>
+        <h2>Starts at ₹149. Cancel at any time.</h2>
+        <p>
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div class="hero-form">
+          <input type="email" class="email" placeholder="Email address" />
+          <button class="btn_get_started">Get Started ></button>
+        </div>
+      </div>
+    </div>
+    <!-- Curved Separator -->
+    <div class="netflix-curve-outer">
+      <div class="netflix-curve-inner">
+        <div class="netflix-curve-bg">
+          <div class="netflix-curve-gradient"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trending Now Section -->
+    <div class="trendingnow"><h2>Trending Now</h2></div>
+    <div class="slide-container">
+      <div class="slide-images">
+        <div class="slide-item">
+          <img src="Assets/images/image6-c.webp" alt="Movie 1" />
+          <span class="movie-number">1</span>
+        </div>
+        <div class="slide-item">
+          <img src="Assets/images/image2-c.webp" alt="Movie 2" />
+          <span class="movie-number">2</span>
+        </div>
+        <div class="slide-item">
+          <img src="Assets/images/image3-c.webp" alt="Movie 3" />
+          <span class="movie-number">3</span>
+        </div>
+        <div class="slide-item">
+          <img src="Assets/images/image4-c.webp" alt="Movie 4" />
+          <span class="movie-number">4</span>
+        </div>
+        <div class="slide-item">
+          <img src="Assets/images/image5-c.webp" alt="Movie 5" />
+          <span class="movie-number">5</span>
+        </div>
+        <div class="slide-item">
+          <img src="Assets/images/image6-c.webp" alt="Movie 6" />
+          <span class="movie-number">6</span>
+        </div>
+        <div class="slide-item">
+          <img src="Assets/images/image7-c.webp" alt="Movie 7" />
+          <span class="movie-number">7</span>
+        </div>
+        <div class="slide-item">
+          <img src="Assets/images/image8-c.webp" alt="Movie 8" />
+          <span class="movie-number">8</span>
+        </div>
+        <div class="slide-item">
+          <img src="Assets/images/image9-c.webp" alt="Movie 9" />
+          <span class="movie-number">9</span>
+        </div>
+        <div class="slide-item">
+          <img src="Assets/images/image10-c.webp" alt="Movie 10" />
+          <span class="movie-number">10</span>
+        </div>
+      </div>
+      <button class="prev-btn">&#8249;</button>
+      <button class="next-btn">&#8250;</button>
+    </div>
+    <!-- <div class="seperation"></div> -->
+
+    <!-- More Reasons to Join Section -->
+    <div class="why-join-container">
+      <h2>More reasons to join</h2>
+      <div class="reason-grid">
+        <div class="reason-item">
+          <h3>Enjoy on your TV</h3>
+          <p>
+            Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+            players and more.
+          </p>
+        </div>
+        <div class="reason-item">
+          <h3>Download your shows to watch offline</h3>
+          <p>Save your favorites easily and always have something to watch.</p>
+        </div>
+        <div class="reason-item">
+          <h3>Watch everywhere</h3>
+          <p>
+            Stream unlimited movies and TV shows on your phone, tablet, laptop
+            and TV.
+          </p>
+        </div>
+        <div class="reason-item">
+          <h3>Create profiles for kids</h3>
+          <p>
+            Send kids on adventures with their favorite characters in a space
+            made just for them—free with your membership.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="seperation"></div> -->
+
+    <!-- FAQ Section -->
+    <div class="faq-container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">
+            What is Netflix? <span class="plus-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Netflix is a streaming service that offers a wide variety of
+              award-winning TV shows, movies, anime, documentaries and more on
+              thousands of internet-connected devices.
+            </p>
+            <br />
+            <p>
+              You can watch as much as you want, whenever you want, without a
+              single ad – all for one low monthly price. There's always
+              something new to discover, and new TV shows and movies are added
+              every week!
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            How much does Netflix cost? <span class="plus-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+              streaming device, all for one fixed monthly fee. Plans range from
+              ₹ 149 to ₹ 649 a month. No extra costs, no contracts.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            Where can I watch? <span class="plus-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Watch anywhere, anytime. Sign in with your Netflix account to
+              watch instantly on the web at netflix.com from your personal
+              computer or on any internet-connected device that offers the
+              Netflix app, including smart TVs, smartphones, tablets, streaming
+              media players and game consoles.
+            </p>
+            <br />
+            <p>
+              You can also download your favourite shows with the iOS, Android,
+              or Windows 10 app. Use downloads to watch while you're on the go
+              and without an internet connection. Take Netflix with you
+              anywhere.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            How do I cancel? <span class="plus-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Netflix is flexible. There are no annoying contracts and no
+              commitments. You can easily cancel your account online in two
+              clicks. There are no cancellation fees – start or stop your
+              account anytime.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            What can I watch on Netflix? <span class="plus-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Netflix has an extensive library of feature films, documentaries,
+              TV shows, anime, award-winning Netflix originals, and more. Watch
+              as much as you want, anytime you want.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            Is Netflix good for kids? <span class="plus-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              The Netflix Kids experience is included in your membership to give
+              parents control while kids enjoy family-friendly TV shows and
+              films in their own space.
+            </p>
+            <br />
+            <p>
+              Kids profiles come with PIN-protected parental controls that let
+              you restrict the maturity rating of content kids can watch and
+              block specific titles you don’t want kids to see.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="seperation"></div> -->
+
+    <!-- Email Form & Footer -->
+    <div class="footer-form-container">
+      <p class="ready-text">
+        Ready to watch? Enter your email to create or restart your membership.
+      </p>
+      <div class="hero-form">
+        <input type="email" class="email" placeholder="Email address" />
+        <button class="btn_get_started">Get Started ></button>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Questions? Call
+        <a class="class-link" href="tel:000-800-919-1694">000-800-919-1694</a>
+      </p>
+      <div class="footer-links">
+        <a href="#">FAQ</a>
+        <a href="#">Help Centre</a>
+        <a href="#">Account</a>
+        <a href="#">Media Centre</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Jobs</a>
+        <a href="#">Ways to Watch</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy</a>
+        <a href="#">Cookie Preferences</a>
+        <a href="#">Corporate Information</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Speed Test</a>
+        <a href="#">Legal Notices</a>
+        <a href="#">Only on Netflix</a>
+      </div>
+      <div class="dropdown">
+        <button class="btn_english" id="languageBtn">
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m13 19 3.5-9 3.5 9m-6.125-2h5.25M3 7h7m0 0h2m-2 0c0 1.63-.793 3.926-2.239 5.655M7.5 6.818V5m.261 7.655C6.79 13.82 5.521 14.725 4 15m3.761-2.345L5 10m2.761 2.655L10.2 15"
+            />
+          </svg>
+          English
+          <svg
+            class="dropdown-icon"
+            fill="#fff"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+          >
+            <path d="M7 10L12 15L17 10H7Z" />
+          </svg>
+        </button>
+        <div class="dropdown-content">
+          <button onclick="changeLanguage('English')">English</button>
+          <button onclick="changeLanguage('हिन्दी')">हिन्दी</button>
+        </div>
+      </div>
+      <p style="margin-top: 15px">Netflix India</p>
+      <br />
+      <p style="margin-top: 5px">
+        This page is protected by Google reCAPTCHA to ensure you're not a bot.
+        <u><a href="#">Learn more.</a></u>
+      </p>
+    </div>
+    <script src="slider.js"></script>
+  </body>
+</html>
